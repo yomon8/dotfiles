@@ -1,0 +1,37 @@
+odel = "gpt-5.5"
+model_reasoning_effort = "medium"
+approvals_reviewer = "user"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+
+[features]
+multi_agent = true
+codex_hooks = true
+
+[agents]
+max_threads = 12
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@2.1.4"]
+
+[tui]
+status_line = ["model-with-reasoning", "context-remaining", "current-dir", "five-hour-limit", "weekly-limit"]
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[projects."/home/yomon8"]
+trust_level = "trusted"
+
+[projects."/home/yomon8/repo"]
+trust_level = "trusted"
+
+[projects."/home/yomon8/repo/platform-modules"]
+trust_level = "trusted"
+
+[projects."/home/yomon8/repo/dotfiles"]
+trust_level = "trusted"

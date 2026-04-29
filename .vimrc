@@ -1,10 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Shougo/neobundle.vim'
-Plug 'fatih/vim-go'
 Plug 'scrooloose/nerdtree'
 Plug 'simeji/winresizer'
 Plug 'nanotech/jellybeans.vim'
-Plug 'buoto/gotests-vim'
 call plug#end()
 
 colorscheme jellybeans
