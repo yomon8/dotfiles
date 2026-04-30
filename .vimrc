@@ -3,6 +3,7 @@ Plug 'Shougo/neobundle.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'simeji/winresizer'
 Plug 'nanotech/jellybeans.vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 colorscheme jellybeans
@@ -63,4 +64,3 @@ endfunction
 
 set rtp+=~/.fzf
 :command Bq Buffers
-
